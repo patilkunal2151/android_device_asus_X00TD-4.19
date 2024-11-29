@@ -27,15 +27,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00TD \
     PRODUCT_NAME=WW_X00TD
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="sdm660_64-user 10 QKQ1 72 release-keys"
-    
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "asus/RU_X00TD/ASUS_X00T_6:10/QKQ1/17.2017.2012.438-20201203:user/release-keys"
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.vendor.build.fingerprint=$(BUILD_FINGERPRINT) \
-    ro.system.build.fingerprint=$(BUILD_FINGERPRINT) \
-    ro.product.build.fingerprint=$(BUILD_FINGERPRINT) \
-    ro.system_ext.build.fingerprint=$(BUILD_FINGERPRINT)

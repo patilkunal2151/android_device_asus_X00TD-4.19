@@ -22,13 +22,13 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
-# Powerhint
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/power-libperfmgr/sdm636_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.device.rc
+
+# Thermal configs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # Wifi
 PRODUCT_PACKAGES += \
