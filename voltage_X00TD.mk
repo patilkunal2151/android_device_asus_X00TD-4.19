@@ -15,8 +15,11 @@ $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Inherit some common crDroid stuff
-TARGET_SUPPORTS_QUICK_TAP  := true
+#TARGET_SUPPORTS_QUICK_TAP  := true
 TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
