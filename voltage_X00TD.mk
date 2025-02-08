@@ -15,6 +15,9 @@ $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
